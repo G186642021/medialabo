@@ -1,0 +1,33 @@
+html {
+    font-size:100%;
+    font-style: initial;
+}
+body {
+    background-color: antiquewhite;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: blueviolet;
+}
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+h1 {
+    text-align: center;
+    margin: 1.5em;
+}
+.top {
+    text-align: center;
+}
+.zero, .first, .second {
+    background-color: #E7D4B5;
+    border: 5px solid #602d1d;
+    padding: 20px;
+    margin: 30px 20px;
+}

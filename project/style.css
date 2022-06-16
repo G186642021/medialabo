@@ -1,0 +1,18 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: bisque;
+}
+
+h2 {
+    text-align: center;
+    padding:30px 10px 10px;
+}
+div {
+    background-color: antiquewhite;
+    border: 5px solid #602d1d;
+    margin: 50px 20px;
+    padding: 5px 10px;
+}

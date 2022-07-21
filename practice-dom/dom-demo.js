@@ -13,7 +13,7 @@ ul.insertAdjacentElement('beforeend', li);
 
 // id が sevenOcean の h2 要素を検索
 // （次の行を完成させる）
-let h2sevenOcean =               ;
+let h2sevenOcean = document.querySelector('h2#sevenOcean');              ;
 
 // 7大洋　の名前を配列に代入
 let oceans = [
@@ -35,5 +35,16 @@ h2sevenOcean.insertAdjacentElement('afterend',ul);
 // ul に7つの大陸を追加する
 for (let o of oceans) {
   // （この中を完成させる）
+  li = document.createElement('li');
+  li.textContent = o;
+  ul.insertAdjacentElement('beforeend',li);
+}
 
+let h1 = document.querySelector('h1');
+h1.style.color = 'blue';
+h1.style.fontSize = '10pt';
+
+let h2s = document.querySelector('h2');
+for (let h2 of h2s) {
+  h2.style.backgroundColor = 'palegreen';
 }

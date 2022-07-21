@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>グルメ情報</title>
-        <link rel="stylesheet" href="project.css">
-        <script src="gourmet.js" defer></script>
-    </head>
-    <body>
-        <h2>グルメ情報</h2>
-        <div>
+
+<head>
+    <meta charset="utf-8">
+    <title>グルメ情報</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js" defer></script>
+</head>
+
+<body>
+    <h2>グルメ情報</h2>
+    <div>
         <h4>検索キー</h4>
+        <form method="post">
+            <label for="prefecture">検索:</label>
+            <select name="prefecture">
+                <option value="選択してください"></option>
+                <option value="G001">居酒屋</option>
+                <option value="G002">ダイニングバー・バル</option>
+                <option value="G003">創作料理</option>
+                <option value="G004">和食</option>
+                <option value="G005">洋食</option>
+                <option value="G006">イタリアン・フレンチ</option>
+                <option value="G007">中華</option>
+                <option value="G008">焼肉・ホルモン</option>
+                <option value="G009">アジア・エスニック料理</option>
+                <option value="G010">各国料理</option>
+                <option value="G011">カラオケ・パーティー</option>
+                <option value="G012">バー・カクテル</option>
+                <option value="G013">ラーメン</option>
+                <option value="G014">カフェ・スイーツ</option>
+                <option value="G015">その他グルメ</option>
+                <option value="G016">お好み焼き・もんじゃ</option>
+                <option value="G017">韓国料理</option>
+            </select>
+        </form>
+        <button id="sendRequest">検索</button>
+    </div>
+    <div>
         <p>検索キーは<em> genre </em>（ジャンル）1つだけです。</p>
         <p>genreの取りうる値</p>
         <ul>
@@ -18,7 +46,7 @@
             <li>G003...創作料理</li>
             <li>G004...和食</li>
             <li>G005...洋食</li>
-            <li>G006...イタリアンフレンチ</li>
+            <li>G006...イタリアン・フレンチ</li>
             <li>G007...中華</li>
             <li>G008...焼肉・ホルモン</li>
             <li>G009...アジア・エスニック料理</li>
@@ -31,8 +59,8 @@
             <li>G016...お好み焼き・もんじゃ</li>
             <li>G017...韓国料理</li>
         </ul>
-        </div>
-        <div>
+    </div>
+    <div>
         <h4>検索結果のデータ項目</h4>
         <table>
             <tr>
@@ -77,5 +105,6 @@
             </tr>
         </table>
         <div></div>
-    </body>
+</body>
+
 </html>

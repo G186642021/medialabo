@@ -30,10 +30,22 @@ function showResult(resp) {
     console.log(data);
 
     // data.x を出力
-    console.log(data.G001);
+    console.log(data.results.shop[9].name);
     
     let G001 = document.querySelector('#G001');
-    G001.textContent = data.G001;
+    G001.textContent = data.results.shop[9].name;
+
+
+    console.log(data.results.shop[0].name);
+    
+    let G002 = document.querySelector('#G002');
+    G002.textContent = data.results.shop[0].name;
+
+
+    console.log(data.results.shop[2].name);
+    
+    let G003 = document.querySelector('#G003');
+    G003.textContent = data.results.shop[2].name;
 }
 
 // 通信エラーが発生した時の処理

@@ -30,7 +30,13 @@ function showResult(resp) {
     console.log(data);
 
     // data.x を出力
-    console.log(data.x);
+    console.log(data.G001.description);
+
+    let description = document.querySelector('#result');
+    description.textContent = data.G001.description;
+
+
+
 }
 
 // 通信エラーが発生した時の処理

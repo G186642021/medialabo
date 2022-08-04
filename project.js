@@ -30,10 +30,9 @@ function showResult(resp) {
     console.log(data);
 
     // data.x を出力
-    console.log(data.G001.description);
-
-    let description = document.querySelector('#result');
-    description.textContent = data.G001.description;
+    console.log(data.G001);
+    let G001 = document.querySelector('#G001');
+    G001.textContent = data.G001;
 
 
 

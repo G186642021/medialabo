@@ -31,11 +31,9 @@ function showResult(resp) {
 
     // data.x を出力
     console.log(data.G001);
+    
     let G001 = document.querySelector('#G001');
     G001.textContent = data.G001;
-
-
-
 }
 
 // 通信エラーが発生した時の処理
